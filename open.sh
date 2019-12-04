@@ -89,8 +89,8 @@ update () {
 	cd $HOME
 	rm -f .open.sh
 	rm -Rf 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂
-	git clone https://github.com/rooted-cyber/Open-Tools
-	cd Open-Tools
+	git clone https://github.com/rooted-cyber/Open-ToolS
+	cd Open-ToolS
 	bash open.sh
 	}
 amer_in () {
@@ -465,7 +465,7 @@ pta="\033[95m"
 ajib="\033[96m"
 kya="apt install figlet"
 kr="apt install toilet"
-kuch="mv Open-Tools 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂"
+kuch="mv Open-ToolS 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂"
 lgta="mv open.sh .open.sh"
 hai="cp -f .open.sh $HOME"
 rhe="cp -f open $PREFIX/bin"
@@ -480,7 +480,7 @@ cd $PREFIX/bin
 if [ -e open ];then
 $likho "$hara Successfully installed"
 else
-cd ~/Open-Tools
+cd ~/Open-ToolS
 $likho "$lal [+] $hara Requirement Installing"
 apt update
 apt upgrade
