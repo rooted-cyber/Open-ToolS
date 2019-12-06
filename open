@@ -1,3 +1,24 @@
 #!/data/data/com.termux/files/usr/bin/sh
 cd ~
+install_open () {
+cd ~
+apt update
+apt upgrade
+apt install git
+git clone https://github.com/rooted-cyber/Open-ToolS
+cd Open-ToolS
+bash open.sh
+}
+if [ -e Open-ToolS ];then
 bash .open.sh
+else
+cd ~
+printf "\n\n\033[91m Open-ToolS is not install !!\n\n"
+echo -e "\033[92m Install Open-ToolS \033[91m(\033[93m Y/N\033[91m ) "
+read o
+case $o in
+y|Y)install_open ;;
+n|N)exit 0
+*)open ;;
+esac
+fi
