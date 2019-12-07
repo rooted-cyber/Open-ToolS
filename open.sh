@@ -73,8 +73,66 @@ sayhello_else () {
 	esac
 	}
 	
+ngrok_install () {
+	cd ~/saycheese
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/saycheese
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in saycheese\n\n"
+	cp -f $PREFIX/bin/ngrok ~/saycheese
+	fi
+	cd ~/shellphish
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/shellphish
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in shellphish\n\n"
+	cp -f $PREFIX/bin/ngrok ~/shellphish
+	fi
 
-
+	cd ~/H-Cam
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/H-Cam
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in H-Cam\n\n"
+	cp -f $PREFIX/bin/ngrok ~/H-Cam
+	fi
+	cd ~/B-Crash
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/B-Crash
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in B-Crash\n\n"
+	cp -f $PREFIX/bin/ngrok ~/B-Crash
+	fi
+	
+	cd ~/sayhello
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/sayhello
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in sayhello\n\n"
+	cp -f $PREFIX/bin/ngrok ~/sayhello
+	fi
+	cd ~/HiddenEye/server
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/HiddenEye/server
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in HiddenEye\n\n"
+	cp -f $PREFIX/bin/ngrok ~/HiddenEye/server
+	fi
+cd ~/HiddenEye/Server
+	if [ -e ngrok ];then
+	rm -f ngrok
+	cp -f $PREFIX/bin/ngrok ~/HiddenEye/Server
+	else
+	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in HiddenEye\n\n"
+	cp -f $PREFIX/bin/ngrok ~/HiddenEye/Server
+	fi
+	}
 
 
 
@@ -498,6 +556,32 @@ $kuch
 $saf
 $likho "$hara Now you can use this command :- open"
 fi
+cd $PREFIX/bin
+if [ -e ngrok ];then
+echo
+else
+clear
+printf "\033[91m [×] Ngrok not found !!!\n"
+sleep 1
+printf "\033[91m\n\n [+]\033[92m Downloading Ngrok....."
+cd ~
+wget https://github.com/rooted-cyber/upload/raw/master/ngrok.zip > /dev/null 2>&1
+printf "\n\n\033[94m [√]\033[93m Download complete\n\n"
+sleep 1
+printf "\033[95m [+]\033[96m Unzip Ngrok.....\n\n"
+unzip ngrok.zip
+sleep 1
+printf "\n\n\033[94m [√]\033[93m Unzip complete\n\n"
+sleep 1
+printf "\033[91m [-]\033[92m Installing ngrok...\n\n"
+cp -f ngrok $PREFIX/bin
+chmod 777 $PREFIX/bin/ngrok
+sleep 1
+printf "\n\n\033[94m [√]\033[93m Installing complete\n\n"
+sleep 1
+fi
+clear
+cd ~
 $image Tools | $rang
 echo
 
@@ -510,8 +594,8 @@ $likh "\n	$lal [ 6 ]$hara TBomb"
 $likh "\n	$lal [ 7 ]$hara Virus-Making"
 $likh "\n	$lal [ 8 ]$hara B-Crash"
 $likh "\n	$lal [ 9 ]$hara Amer"
+$likh "\n	$lal [ 10 ]$hara Install Ngrok all tools"
 
-#$likh "\n	$lal [ 10 ]$hara Saycheese"
 #$likh "\n	$lal [ 11 ]$hara Shellphish"
 #$likh "\n	$lal [ 12 ]$hara Sayhello"
 #$likh "\n	$lal [ 13 ]$hara HiddenEye"
@@ -521,8 +605,8 @@ $likh "\n	$lal [ 9 ]$hara Amer"
 #$likh "\n	$lal [ 17 ]$hara B-Crash"
 #$likh "\n	$lal [ 18 ]$hara Amer"
 
-$likh "\n	$lal [ 10 ]$hara Update Tool"
-$likh "\n	$lal [ 11 ]$hara Exit\n\n"
+$likh "\n	$lal [ 11 ]$hara Update Tool"
+$likh "\n	$lal [ 12 ]$hara Exit\n\n"
 
 $likho "$ajib"
 $likh %s "Select >> "
@@ -537,7 +621,8 @@ case $kro in
 7)Virus-Making ;;
 8)B-Crash ;;
 9)amer ;;
-10)update ;;
-11)printf "\n\n\033[96m =======================================\n\n\033[92m        [+] \033[93m Thanx for using this. \n\n\033[96m =======================================\n\n"|$rang
+10)ngrok_install ;;
+11)update ;;
+12)printf "\n\n\033[96m =======================================\n\n\033[92m        [+] \033[93m Thanx for using this. \n\n\033[96m =======================================\n\n"|$rang
 exit 0 ;;
 esac
