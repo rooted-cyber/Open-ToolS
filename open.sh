@@ -5,6 +5,7 @@ sayhello_else () {
 	case $v in
 	y|Y)sayhello_in ;;
 	n|N)im ;;
+	*)sayhello_else ;;
 	esac
 	}
 	shellphish_else () {
@@ -14,6 +15,7 @@ sayhello_else () {
 	case $v in
 	y|Y)shellphish_in ;;
 	n|N)im ;;
+	*)shellphish_else ;;
 	esac
 	}
 	hiddeneye_else () {
@@ -23,6 +25,7 @@ sayhello_else () {
 	case $v in
 	y|Y)hiddeneye_in ;;
 	n|N)im ;;
+	*)hiddeneye_else ;;
 	esac
 	}
 	hcam_else () {
@@ -32,6 +35,7 @@ sayhello_else () {
 	case $v in
 	y|Y)hcam_in ;;
 	n|N)im ;;
+	*)hcam_else ;;
 	esac
 	}
 	
@@ -43,6 +47,7 @@ sayhello_else () {
 	case $v in
 	y|Y)tbomb_in ;;
 	n|N)im ;;
+	*)tbomb_else ;;
 	esac
 	}
 	virus_else () {
@@ -52,6 +57,7 @@ sayhello_else () {
 	case $v in
 	y|Y)virus_in ;;
 	n|N)im ;;
+	*)virus_else ;;
 	esac
 	}
 	bcrash_else () {
@@ -61,6 +67,7 @@ sayhello_else () {
 	case $v in
 	y|Y)bcrash_in ;;
 	n|N)im ;;
+	*)bcrash_else ;;
 	esac
 	}
 	amer_else () {
@@ -70,6 +77,7 @@ sayhello_else () {
 	case $v in
 	y|Y)hcam_in ;;
 	n|N)im ;;
+	*)amer_else ;;
 	esac
 	}
 	
@@ -378,12 +386,24 @@ hiddeneye_in () {
 			pip3 install wget
 			python3 HiddenEye.py
 			}
+			del () {
+				cd ~
+				rm -Rf HiddenEye
+				hiddeneye_in
+				}
 	
 hiddeneye () {
 	cd ~
 	if [ -e HiddenEye ];then
-	cd HiddenEye
-	python3 HiddenEye.py
+	echo -e "\033[92m HiddenEye installed\033[96m"
+	echo -e -n "Update it ? \033[91m(\033[92m Y/N \033[91m) "
+	read h
+	case $h in
+	y|Y)del ;;
+	n|N)cd HiddenEye
+	python3 HiddenEye.py ;;
+	*)hiddeneye ;;
+	esac
 	else
 	hiddeneye_else
 	fi
@@ -506,6 +526,7 @@ sayhello_in () {
 	case $v in
 	y|Y)saycheese_in ;;
 	n|N)im ;;
+	*)saycheese ;;
 	esac
 	fi
 	}
