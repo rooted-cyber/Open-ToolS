@@ -74,6 +74,7 @@ sayhello_else () {
 	}
 	
 ngrok_install () {
+	ngrok
 	cd ~/saycheese
 	if [ -e ngrok ];then
 	rm -f ngrok
@@ -556,6 +557,7 @@ $kuch
 $saf
 $likho "$hara Now you can use this command :- open"
 fi
+ngrok () {
 cd $PREFIX/bin
 if [ -e ngrok ];then
 echo
@@ -580,6 +582,7 @@ sleep 1
 printf "\n\n\033[94m [√]\033[93m Installing complete\n\n"
 sleep 1
 fi
+}
 clear
 cd ~
 $image Tools | $rang
@@ -625,4 +628,5 @@ case $kro in
 11)update ;;
 12)printf "\n\n\033[96m =======================================\n\n\033[92m        [+] \033[93m Thanx for using this. \n\n\033[96m =======================================\n\n"|$rang
 exit 0 ;;
+*)open ;;
 esac
