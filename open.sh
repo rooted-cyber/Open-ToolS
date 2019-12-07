@@ -87,62 +87,68 @@ ngrok_install () {
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/saycheese
+	chmod 777 ngrok
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in saycheese\n\n"
 	cp -f $PREFIX/bin/ngrok ~/saycheese
+	chmod 777 ngrok
 	fi
 	cd ~/shellphish
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/shellphish
+	chmod 777 ngrok
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in shellphish\n\n"
 	cp -f $PREFIX/bin/ngrok ~/shellphish
+	chmod 777 ngrok
 	fi
 
 	cd ~/H-Cam
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/H-Cam
+	chmod 777 ngrok
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in H-Cam\n\n"
 	cp -f $PREFIX/bin/ngrok ~/H-Cam
+	chmod 777 ngrok
 	fi
 	cd ~/B-Crash
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/B-Crash
+	chmod 777 ngrok
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in B-Crash\n\n"
 	cp -f $PREFIX/bin/ngrok ~/B-Crash
+	chmod 777 ngrok
 	fi
 	
 	cd ~/sayhello
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/sayhello
+	chmod 777 ngrok
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in sayhello\n\n"
 	cp -f $PREFIX/bin/ngrok ~/sayhello
+	chmod 777 ngrok
 	fi
-	cd ~/HiddenEye/server
-	if [ -e ngrok ];then
-	rm -f ngrok
-	cp -f $PREFIX/bin/ngrok ~/HiddenEye/server
-	else
-	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in HiddenEye\n\n"
-	cp -f $PREFIX/bin/ngrok ~/HiddenEye/server
-	fi
-cd ~/HiddenEye/Server
+	cd ~/HiddenEye/Server
 	if [ -e ngrok ];then
 	rm -f ngrok
 	cp -f $PREFIX/bin/ngrok ~/HiddenEye/Server
+	chmod 777 ngrok
 	else
+	cd ~/HiddenEye/Server
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in HiddenEye\n\n"
 	cp -f $PREFIX/bin/ngrok ~/HiddenEye/Server
+	chmod 777 ngrok
 	fi
 	}
 
+	
 
 
 im () {
