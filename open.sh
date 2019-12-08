@@ -83,9 +83,9 @@ sayhello_else () {
 	
 ngrok_install () {
 	ngrok
-	cd ~/saycheese
+	cd ~/saycheese > /dev/null 2>&1
 	if [ -e ngrok ];then
-	rm -f ngrok
+	rm -f ngrok > /dev/null 2>&1
 	cp -f $PREFIX/bin/ngrok ~/saycheese
 	chmod 777 ngrok
 	else
@@ -93,9 +93,9 @@ ngrok_install () {
 	cp -f $PREFIX/bin/ngrok ~/saycheese
 	chmod 777 ngrok
 	fi
-	cd ~/shellphish
+	cd ~/shellphish > /dev/null 2>&1
 	if [ -e ngrok ];then
-	rm -f ngrok
+	rm -f ngrok > /dev/null 2>&1
 	cp -f $PREFIX/bin/ngrok ~/shellphish
 	chmod 777 ngrok
 	else
@@ -104,9 +104,9 @@ ngrok_install () {
 	chmod 777 ngrok
 	fi
 
-	cd ~/H-Cam
+	cd ~/H-Cam > /dev/null 2>&1
 	if [ -e ngrok ];then
-	rm -f ngrok
+	rm -f ngrok > /dev/null 2>&1
 	cp -f $PREFIX/bin/ngrok ~/H-Cam
 	chmod 777 ngrok
 	else
@@ -588,6 +588,7 @@ ngrok () {
 cd $PREFIX/bin
 if [ -e ngrok ];then
 echo
+cd $HOME
 else
 clear
 printf "\033[91m [×] Ngrok not found !!!\n"
