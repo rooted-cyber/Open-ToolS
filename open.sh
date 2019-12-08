@@ -161,7 +161,8 @@ update () {
 	rm -f open
 	cd $HOME
 	rm -f .open.sh
-	rm -Rf 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂
+	rm -Rf Open-Tools
+	#rm -Rf 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂
 	git clone https://github.com/rooted-cyber/Open-ToolS
 	cd Open-ToolS
 	bash open.sh
@@ -551,7 +552,7 @@ pta="\033[95m"
 ajib="\033[96m"
 kya="apt install figlet"
 kr="apt install toilet"
-kuch="mv Open-ToolS 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂"
+#kuch="mv Open-ToolS 😂😂😂😂😂😂‌‌‌‌Nhi_khulega😂😂😂😂"
 lgta="mv open.sh .open.sh"
 hai="cp -f .open.sh $HOME"
 rhe="cp -f open $PREFIX/bin"
