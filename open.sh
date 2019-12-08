@@ -83,6 +83,13 @@ sayhello_else () {
 	
 ngrok_install () {
 	ngrok
+	br
+	hh
+	hcam
+	hi
+	h
+	}
+	hh () {
 	cd ~/saycheese > /dev/null 2>&1
 	if [ -e ngrok ];then
 	rm -f ngrok > /dev/null 2>&1
@@ -93,6 +100,8 @@ ngrok_install () {
 	cp -f $PREFIX/bin/ngrok ~/saycheese
 	chmod 777 ngrok
 	fi
+	}
+	h () {
 	cd ~/shellphish > /dev/null 2>&1
 	if [ -e ngrok ];then
 	rm -f ngrok > /dev/null 2>&1
@@ -103,6 +112,8 @@ ngrok_install () {
 	cp -f $PREFIX/bin/ngrok ~/shellphish
 	chmod 777 ngrok
 	fi
+	}
+	hcam() {
 
 	cd ~/H-Cam > /dev/null 2>&1
 	if [ -e ngrok ];then
@@ -114,6 +125,8 @@ ngrok_install () {
 	cp -f $PREFIX/bin/ngrok ~/H-Cam
 	chmod 777 ngrok
 	fi
+	}
+	br () {
 	cd ~/B-Crash
 	if [ -e ngrok ];then
 	rm -f ngrok
@@ -122,9 +135,13 @@ ngrok_install () {
 	else
 	printf "\n\n\033[91m [+] \033[92m Installing Ngrok in B-Crash\n\n"
 	cp -f $PREFIX/bin/ngrok ~/B-Crash
+	cd ~/B-Crash
+	ls
+	sleep 2
 	chmod 777 ngrok
 	fi
-	
+	}
+	sa () {
 	cd ~/sayhello
 	if [ -e ngrok ];then
 	rm -f ngrok
@@ -135,6 +152,8 @@ ngrok_install () {
 	cp -f $PREFIX/bin/ngrok ~/sayhello
 	chmod 777 ngrok
 	fi
+	}
+	hi () {
 	cd ~/HiddenEye/Server
 	if [ -e ngrok ];then
 	rm -f ngrok
