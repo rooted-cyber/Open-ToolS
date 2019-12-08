@@ -578,6 +578,7 @@ $ho
 $lgta
 $hai
 cd ~
+apt install wget
 $kuch
 #padh
 #rhe
